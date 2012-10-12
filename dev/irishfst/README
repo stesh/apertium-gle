@@ -11,20 +11,13 @@ irishfst/Makefile
 irishfst/README
 irishfst/test.sh
 irishfst/src/*.txt, *.script
-irishfst/dis/gael-dis.rle, lookup2cgg.prl
+irishfst/dis/gael-dis.rle, lookup2cg3.prl
 irishfst/int/ (empty)
 irishfst/bin/ (empty)
 
 4. run make in the irishfst directory
-the main transducer will be bin/all.fst 
+the main transducer will be bin/lexguess.fst 
 
 5. test using ./test.sh
 
 Mar 2012 EUD
-
-If you use this work in your research, please cite:
-
-Elaine Uí Dhonnchadha (2008) "Part-of-Speech Tagging and Partial 
-   Parsing for Irish using Finite-State Transducers 
-   and Constraint Grammar". PhD Thesis, Dublin City University
-

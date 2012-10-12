@@ -13,8 +13,11 @@ save stack bin/allcaps.fst
 echo <<< COMPOSING >>>
 clear stack
 
-!! NOW COMPOSED IN LOOKUP.DCRIPT
-!!read regex allCap .o. @"int/fixed.fst";
-read regex allCap .o. @"bin/all.fst";
+!! read regex allCap .o. @"bin/all.fst";
+read regex @"bin/all.fst" .o. @"bin/allcaps.fst";
 
 save stack bin/allcaps-all.fst
+
+read regex @"bin/all.fst" .o. @"bin/allcaps.fst"; 
+save stack bin/allcaps-all.fst
+

@@ -2,6 +2,7 @@
 ! VARIANT NOUNS/VN (=) in O Dónaill
 ! Christoph Wendler
 ! November 2008
+! *** fixed
 !***********************************************************
 !
 
@@ -1112,8 +1113,8 @@ cadhluibh		Nf2-6;		! Entry: cadhluibh = cáithluibh.
 cadhóg		Nf2-1;		! Entry: cadhóg = cabhóg.
 cadhsaer		Nm1-1;		! Entry: cadhsaer, cadhsaor = caidhséar.
 cadhsaor		Nm1-1;		! Entry: cadhsaer, cadhsaor = caidhséar.
-cae+Noun+Masc+Com+Sg:0	#;	! ***
-cae+Noun+Masc+Com+Sg+DefArt:0	#;	! ***
+cae+Noun+Masc+Com+Sg:cae	#;	! ***
+cae+Noun+Masc+Com+Sg+DefArt:cae	#;	! ***
 cafairín		Nm4-1;		! Entry: cafairín = caifirín.
 cág		Nf2-1;		! Entry: cág, f = cathóg.
 cágas		Nm1-6;		! Entry: cágas, ~ach = cás, -ach.
@@ -1144,8 +1145,8 @@ cailitheoir		Nm3-1;		! Entry: cailitheoir, m, ~eacht = cailicéir, -eacht.
 cailitheoireacht		Nf3-SINGULAR;		! Entry: cailitheoir, m, ~eacht = cailicéir, -eacht.
 cailleoir		Nm3-1;		! Entry: cailleoir, ~eacht = caileantóir, -eacht.
 cailleoireacht		Nf3-SINGULAR;		! Entry: cailleoir, ~eacht = caileantóir, -eacht.
-caillstean+Noun+Fem+Com+Sg:0	#;	! ***
-caillstean+Noun+Fem+Com+Sg+DefArt:0	#;	! ***
+caillstean+Noun+Fem+Com+Sg:caillstean	#;	! ***
+caillstean+Noun+Fem+Com+Sg+DefArt:chaillstean	#;	! ***
 cáilmhearacht		Nf3-SINGULAR;		! Entry: cáilmhearacht, f = cáiliúlacht.
 cailseach		Nf2-4;		! Entry: cailseach = gailseach.
 cáiltheog		Nf2-2;		! Entry: cáiltheog = calóg.
@@ -1164,8 +1165,8 @@ cáinteach		Nm1-1;		! Entry: cáinteach, m = cáinteoir.
 cáipís		Nf2-7;		! Entry: caipís, cáipís, f = cáipéis.
 caipís		Nf2-7;		! Entry: caipís, cáipís, f = cáipéis.
 caiptín		Nm4-1;		! Entry: caiptín, m = captaen.
-cáir+Noun+Fem+Com+Sg:0	#;	! ***
-cáir+Noun+Fem+Com+Sg+DefArt:0	#;	! ***
+cáir+Noun+Fem+Com+Sg:cáir	#;	! ***
+cáir+Noun+Fem+Com+Sg+DefArt:cháir	#;	! ***
 cairb		Nf2-8;		! Entry: cairb = coirb.
 cairbh+Noun+Fem+Com+Sg:0	#;	! ***
 cairbh+Noun+Fem+Com+Sg+DefArt:0	#;	! ***
@@ -9233,12 +9234,12 @@ doiséinne		Nf4-7;		! Entry: doiséinne, f, doisín, m = dosaen.
 !doisín		Nm4-1;		! Entry: doiséinne, f, doisín, m = dosaen.
 donnréidh		Nf2-SINGULAR;		! Entry: donnréidh, f = donn réidh : donn 3.
 drá		Nm4-8;		! Entry: drá, m = drámh.
-dreamhan+Noun+Fem+Com+Sg:0	#;
-dreamhan+Noun+Fem+Com+Sg+DefArt:0	#;
-dreamhna+Noun+Fem+Com+Sg:0	#;
-dreamhna+Noun+Fem+Com+Sg+DefArt:0	#;
-duí+Noun+Fem+Com+Sg:0	#;
-duí+Noun+Fem+Com+Sg+DefArt:0	#;
+dreamhan+Noun+Fem+Com+Sg:dreamhan	#;
+dreamhan+Noun+Fem+Com+Sg+DefArt:dreamhan	#;
+dreamhna+Noun+Fem+Com+Sg:dreamhna	#;
+dreamhna+Noun+Fem+Com+Sg+DefArt:dreamhna	#;
+duí+Noun+Fem+Com+Sg:duí	#;
+duí+Noun+Fem+Com+Sg+DefArt:duí	#;
 Eabhra		Nf4-SINGULAR;		! Entry: Eabhra, f = eabhrais.
 eaglasach		Nm1-1;		! Entry: eaglas, f, ~ach = eaglais, -each.
 éarma+Noun+Fem+Com+Sg:0	#;

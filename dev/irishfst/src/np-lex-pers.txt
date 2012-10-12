@@ -109,7 +109,7 @@ Madailín	Nf4-Prop;
 Máible	Nf4-Prop;
 Maighréad	Nf4-Prop;
 Máille	Nf4-Prop;
-Maim	Nf4-Prop;	# mar 2012
+Maim	Nf4-Prop;	! mar 2012
 Máire	Nf4-Prop;
 Máiréad	Nf4-Prop;
 Máirín	Nf4-Prop;
@@ -269,8 +269,8 @@ Gilleán	Nm1-Prop;
 Giobún	Nm1-Prop;
 Gordan	Nm1-Prop;
 Hoibeard	Nm1-Prop;
-íomhar	Nm1-Prop;
-Indiach		Nm1-Prop;	# mar 2012
+Íomhar	Nm1-Prop;
+Indiach		Nm1-Prop;	! mar 2012
 Labhrás	Nm1-Prop;
 Laoiseach	Nm1-Prop;
 Leon	Nm1-Prop;
@@ -279,7 +279,7 @@ Lomán	Nm1-Prop;
 Lonán	Nm1-Prop;
 Lorcán	Nm1-Prop;
 Lúcás	Nm1-Prop;
-lústás	Nm1-Prop;
+Lústás	Nm1-Prop;
 Maitias	Nm1-Prop;
 Mánas	Nm1-Prop;
 Mantán	Nm1-Prop;
@@ -344,7 +344,7 @@ Diarmaid	Nm3-Prop;
 Diarmuid	Nm3-Prop;
 Gréagóir	Nm3-Prop;
 Iarlaith	Nm3-Prop;
-larlaith	Nm3-Prop;
+Iarlaith	Nm3-Prop;
 Mathúin	Nm3-Prop;
 Matha	Nm4-Prop;  ! Mathew?
 Meilseoir	Nm3-Prop;

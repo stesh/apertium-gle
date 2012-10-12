@@ -904,6 +904,14 @@ Nm5-7-SINGULAR;
 +Noun+Masc+Com:^C^Atht			PL-AÍ;
 +Noun+Masc+Gen+Strong:^G^Atht		PL-AÍ;
 +Noun+Masc+Voc:^V^Atht			PL-AÍ;
+
+!----------------------------------------------------------------------------
+LEXICON Ns
++Subst+Noun+Sg:0	SéUrú;
+
+LEXICON Nspl
++Subst+Noun+Pl:0	SéUrú;
+
 !************************************************************************** 
 ! INITIAL MUTATIONS
 !************************************************************************** 
@@ -1042,8 +1050,11 @@ LEXICON Voc-sg-0
 
 LEXICON Voc-sg-1
 +Sg+Len:^Caol^Sé	#; 	! eg. a éin - O bird!
-			!     a chait, a íl 
-			! eg. a shagairt 
+				!     a chait, a íl 
+				! eg. a shagairt 
+
+LEXICON Voc-initial
++Len:^IM^Sé		#;	! Jul 2012 added +Len
 
 !-------------------------------------------------------------------------
 !-------------------

@@ -28,7 +28,6 @@ píre+Adj+Base:píre			#;	! dáiríre píre
 
 
 
-
 !***************************************************************************
 !	I R R E G U L A R    C O M P A R A T I V E S
 !***************************************************************************
@@ -76,7 +75,7 @@ LEXICON AdjIrregular
 céanna+Adj+Base+Ecl:gcéanna	#;	! Eclipsed form, e.g. an am gcéanna
 
 
-álainn:0	AI-álainn;		! lovely
+AI-álainn;		! lovely
 breá:0		AI-breá;		! fine, grand
 
 dearg:0		AI-dearg;		! red
@@ -91,22 +90,23 @@ sean:0		AI-sean;
 te:0		AI-te; 			! hot
 
 LEXICON AI-álainn
-+Adj+Base:álainn		#;
-+Adj+Base+hPref:hálainn		#;
-+Adj+Fem+Com+Sg:álainn	#;			!beautiful	
-+Adj+Fem+Gen+Sg:áille	#;	
-+Adj+Fem+Voc+Sg:álainn	#;
+álainn+Adj+Base:álainn		#;
+!!+Adj+Base+hPref:hálainn		#;
+<0:h á l a i n n %+Adj:0 %+Base:0 %+hPref:0>	#;
+álainn+Adj+Fem+Com+Sg:álainn	#;		!beautiful	
+!!+Adj+Fem+Gen+Sg:áille	#;	
+<á 0:i l 0:l a:e i:0 n:0 n:0 %+Adj:0 %+Fem:0 %+Gen:0 %+Sg:0>	#;
+álainn+Adj+Fem+Voc+Sg:álainn	#;
 
-+Adj+Masc+Com+Sg:álainn		#;
-!+Adj+Masc+Com+Sg+Len:álainn	#;	
-+Adj+Masc+Gen+Sg:álainn		#;
-+Adj+Masc+Voc+Sg:álainn		#;
+álainn+Adj+Masc+Com+Sg:álainn		#;
+álainn+Adj+Masc+Gen+Sg:álainn		#;
+álainn+Adj+Masc+Voc+Sg:álainn		#;
 
-+Adj+Com+NotSlen+Pl:áille 	#;
-+Adj+Com+Slender+Pl:áille	#;
-+Adj+Gen+Weak+Pl:álainn		#;
-+Adj+Gen+Strong+Pl:áille	#;
-+Adj+Voc+Pl:áille			#;
+<á 0:i l 0:l a:e i:0 n:0 n:0 %+Adj:0 %+Com:0 %+NotSlen:0 %+Pl:0>	#;
+<á 0:i l 0:l a:e i:0 n:0 n:0 %+Adj:0 %+Com:0 %+Slender:0 %+Pl:0>	#;
+álainn+Adj+Gen+Weak+Pl:álainn		#;
+<á 0:i l 0:l a:e i:0 n:0 n:0 %+Adj:0 %+Gen:0 %+Strong:0 %+Pl:0>	#;
+<á 0:i l 0:l a:e i:0 n:0 n:0 %+Adj:0 %+Voc:0 %+Pl:0>	#;
 
 LEXICON AI-liath
 +Adj+Base:liath		#;

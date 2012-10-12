@@ -88,6 +88,7 @@ define Bad	[[{tonn} %+Noun %+Fem %+Gen %+Pl]		! (d)tonnta - doesn't append "ta"
 		|[{mionn} %+Noun %+Masc %+Com %+Pl]
 		|[{abair} %+Verbal %+Noun %+hPref]
 		|[{tóg} %+Verbal %+Noun %+Gen]
+		|[{mór} %+Adj %+Comp]
 #		|[[{dearg} %+Adj %+Fem %+Gen %+Sg]:{dirge}]
 #		|[{dearg} %+Adj %+Comp]:{dirge}
 #		|[{bándearg} %+Adj %+Fem %+Gen %+Sg]:{bándirge}
@@ -342,6 +343,7 @@ define Good	[[{tonn} %+Noun %+Fem %+Gen %+Weak %+Pl %+DefArt]:{dtonn}
 		|[{fada} %+Adj %+Comp]:{faide} 			! not fada
 		|[{fada} %+Adj %+Comp %+Len]:{fhaide}		
 		|[{olc} %+Adj %+Comp]:{measa}			! not oilce
+		|[{mór} %+Adj %+Comp]:{mó}			! not móire
 		|[{olc} %+Adj %+Comp %+Len]:{mheasa}	
 
 ];

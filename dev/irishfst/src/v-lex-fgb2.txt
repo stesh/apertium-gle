@@ -560,7 +560,7 @@ fásaigh+Verb+VT:fásaigh		V2-BR;
 feagánaigh+Verb+VT:feagánaigh		V2-BR;
 feáigh+Verb+VT:feáigh		V1-BR-LV;
 feallmharaigh+Verb+VT:feallmharaigh		V2-BR;
-fear+Verb+VT:fear		V1-BR;
+!fear+Verb+VT:fear		V1-BR;	# DUPLICATE (VTI in FP)
 fearastaigh+Verb+VT:fearastaigh		V2-BR;
 feargaigh+Verb+VTI:feargaigh		V2-BR;
 féastaigh+Verb+VI:féastaigh		V2-BR;

@@ -65,7 +65,7 @@ LEXICON V1b-PastImp		! Imperfect  - Aimsir Ghnáthchaite ( past hab.)
 
 LEXICON V1b-Cond		! Conditional Mood - Modh Coinníollach
 
-0:fadh		#;	! munster variation
++CM:fadh		#;	! munster variation
 0:fadh		NegQLen;
 +1P+Sg:fainn		NegQLen;
 +1P+Sg+Emph:fainnse		NegQLen;
@@ -255,7 +255,7 @@ LEXICON V1xb-PastImp		! Imperfect  - Aimsir Ghnáthchaite ( past hab.)
 
 
 LEXICON V1xb-Cond		! Conditional Mood - Modh Coinníollach
-0:ifeadh		#; ! munster variation
++CM:ifeadh		#; ! munster variation
 0:ifeadh		NegQLen;
 +1P+Sg:ifinn		NegQLen;
 +1P+Sg+Emph:ifinnse		NegQLen;
@@ -352,7 +352,7 @@ LEXICON V1xc-PastImp		! Imperfect  - Aimsir Ghnáthchaite ( past hab.)
 
 
 LEXICON V1xc-Cond		! Conditional Mood - Modh Coinníollach
-0:ífeadh		#;	! munster variation
++CM:ífeadh		#;	! munster variation
 0:ífeadh		NegQLen;
 +1P+Sg:ífinn		NegQLen;
 +1P+Sg+Emph:ífinnse		NegQLen;

@@ -26,11 +26,11 @@ LEXICON NP-PLACE-EN
 
 LEXICON NP-PLACE-sg
 +Prop+Noun+Masc:	SéUrú;
-+Adj+Base:^VHach	SéUrú;
++Adj+Base+DeNom:^VHach	SéUrú;
 
 LEXICON NP-PLACE-fem
 +Prop+Noun+Fem:		SéUrú-fem;
-+Adj+Base:^VHach	SéUrú;
++Adj+Base+DeNom:^VHach	SéUrú;
 
 LEXICON NP-PLACE-pl
 +Prop+Noun+Masc:	SéUrú-PL;
@@ -79,14 +79,14 @@ LEXICON Nm1-Prop
 +Prop+Noun+Masc+Com:^M^C			Sing;
 +Prop+Noun+Masc+Gen:^M^G^Caol	IMGen;
 +Prop+Noun+Masc+Voc:^M^V^Caol	Seimh;
-+Adj+Base:^VHach	SéUrú-TIR;
++Adj+Base+DeNom:^VHach	SéUrú-TIR;
 
 ! fem nouns - slenderise and add e
 LEXICON Nf2-Prop
 +Prop+Noun+Fem+Com:^F^C			Sing;
 +Prop+Noun+Fem+Gen:^F^G^Caole	IMGen;
 +Prop+Noun+Fem+Voc:^F^V			Seimhiu;
-+Adj+Base:^VHach	SéUrú-TIR;
++Adj+Base+DeNom:^VHach	SéUrú-TIR;
 
 
 ! fem nouns - broaden and add a
@@ -94,7 +94,7 @@ LEXICON Nf3-Prop
 +Prop+Noun+Fem+Com:^F^C			Sing;
 +Prop+Noun+Fem+Gen:^F^G^Leaa	IMGen;
 +Prop+Noun+Fem+Voc:^F^V		Seimhiu;
-+Adj+Base:^VHach	SéUrú-TIR;
++Adj+Base+DeNom:^VHach	SéUrú-TIR;
 
 LEXICON Nm3-Prop
 +Prop+Noun+Masc+Com:^M^C			Sing;
@@ -107,7 +107,7 @@ LEXICON Nf4-Prop
 +Prop+Noun+Fem+Com:^F^C			Sing;
 +Prop+Noun+Fem+Gen:^F^G			IMGen;
 +Prop+Noun+Fem+Voc:^F^V			Seimhiu;
-+Adj+Base:^VHach	SéUrú-TIR;
++Adj+Base+DeNom:^VHach	SéUrú-TIR;
 
 
 ! masc nouns - no change
@@ -115,7 +115,7 @@ LEXICON Nm4-Prop
 +Prop+Noun+Masc+Com:^M^C			Sing;
 +Prop+Noun+Masc+Gen:^M^G		IMGen;
 +Prop+Noun+Masc+Voc:^M^V		Seimhiu;
-+Adj+Base:^VHach	SéUrú-TIR;
++Adj+Base+DeNom:^VHach	SéUrú-TIR;
 
 
 LEXICON IMGen

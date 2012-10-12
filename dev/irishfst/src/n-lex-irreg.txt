@@ -1323,15 +1323,7 @@ LEXICON NI-biadh
 +Noun+Masc+Gen+Sg:bídh^M^G		Gen-sg-initial;
 +Noun+Masc+Voc+Sg:biadh			Voc-initial;
 
-!----------------------------------------------------------------------------
-LEXICON Ns
-+Subst+Noun+Sg:0	SéUrú;
 
-LEXICON Nspl
-+Subst+Noun+Pl:0	SéUrú;
-
-LEXICON Voc-initial
-0:^IM^Sé	#;
 
 !----------------------------------------------------------------------------
 ! SUBSTANTIVES

@@ -15,8 +15,7 @@ save stack bin/initcaps.fst
 
 echo <<< COMPOSING >>>
 
-!! NOW COMPOSED IN LOOKUP.SCRIPT
-!!read regex initCap .o. @"int/fixed.fst";
-
-read regex initCap .o. @"bin/all.fst";
+clear stack
+!!TESTING read regex @"bin/initcaps.fst" @"int/prep.fst";
+read regex @"bin/all.fst" .o. @"bin/initcaps.fst"; !!! THIS IS IT
 save stack bin/initcaps-all.fst

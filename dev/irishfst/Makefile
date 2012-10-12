@@ -4,8 +4,10 @@
 # February 2003
 # April 2004 : FLASH flags
 # May 2004   : Guessers
+# Mar 2011   : foma version
+# Oct 2012   : foma allguess.fst
 ###################################################################
-# with thanks to Trond Trosterud and Ken Beesley
+# Trond Trosterud and Ken Beesley: makefile advice
 ###################################################################
 SRCDIR = /home/elaine/irishfst
 # INVERSE OF ALL (all.fst & flash.fst created in FIXES)
@@ -38,7 +40,8 @@ bin/propguess.fst \
 bin/nvar.fst \
 bin/vvar.fst \
 bin/adjvar.fst \
-bin/tobar.fst 
+bin/tobar.fst \
+bin/lexguess.fst 
 	@echo
 	@echo " <<< Inverting All Transducer >>>"
 	@echo
@@ -85,6 +88,41 @@ bin/urucaps.fst: bin/all.fst src/xfst-initcaps.script
 	@echo " <<< Uru + Capital >>>"
 	@echo
 	@foma  -f src/xfst-urucaps.script
+
+
+############################################################
+# Here we save all transducers (lexicons and guessers) 
+# in one file
+############################################################
+lexguess.fst: bin/lexguess.fst
+bin/lexguess.fst: bin/all.fst \
+	bin/initcaps.fst \
+	bin/allcaps.fst \
+	bin/digit.fst \
+	bin/guessv.fst \
+	bin/guess_vnva.fst \
+	bin/guess_foreign.fst \
+	bin/guess_unknown.fst \
+	bin/prefnouns.fst \
+	bin/prefadjs.fst \
+	bin/prefverbs.fst \
+	bin/suffnouns.fst \
+	bin/compnouns.fst \
+	bin/compadjs.fst \
+	bin/compverbs.fst \
+	bin/pcompnouns.fst \
+	bin/pcompadjs.fst \
+	bin/pcompverbs.fst \
+	bin/nguess1a.fst \
+	bin/nguess1b.fst \
+	bin/nguess2.fst \
+	bin/propguess.fst \
+	bin/tobar.fst 
+	@echo
+	@echo " <<< Building Big Transducer File "
+	@echo
+	@foma  -f src/foma-lexguess.script
+
 
 # GUESS NOUNS  using typical masc/fem endings
 
@@ -182,7 +220,7 @@ bin/digit.fst: src/xfst-digit.script
 	@foma  -f src/xfst-digit.script
 
 ###################################################################
-# ALL - all FSTS composed
+# ALL - all lexical FSTS composed
 ###################################################################
 
 
@@ -327,7 +365,7 @@ bin/adjvar.fst: src/adj-lex-fgb-eqvar.txt int/ncmpd.fst int/ninit.fst \
 	@echo " <<< Composing Adjective Variants and Rules >>>"
 	@echo
 	@cat src/adj-lex-multi.txt \
-	src/adj-lex-fgb-eqvar.txt > /tmp/adjeqvar.txt
+	src/adj-lex-fgb-eqvar.txt src/adj-lex-cc.txt > /tmp/adjeqvar.txt
 	@printf "read lexc /tmp/adjeqvar.txt \n \
 	save stack int/adjvar.fst \n \
 	load int/ncmpd.fst \n turn \n compose net  \n \
@@ -755,6 +793,7 @@ int/adj.fst: src/adj-lex-multi.txt src/adj-lex-stems.txt src/adj-lex-stems-irreg
 	src/adj-lex-fgb2.txt \
 	src/adj-lex-fgb-var.txt \
 	src/adj-lex-fgb-eqvar.txt \
+	src/adj-lex-cc.txt \
 	int/ninit.fst int/ndiph.fst \
 	int/nsync.fst int/nx.fst int/nchg.fst \
 	int/nchk.fst int/nslen.fst int/nbr.fst \
@@ -772,7 +811,8 @@ int/adj.fst: src/adj-lex-multi.txt src/adj-lex-stems.txt src/adj-lex-stems-irreg
 	src/adj-lex-fgb1.txt \
 	src/adj-lex-fgb2.txt \
 	src/adj-lex-fgb-var.txt \
-	src/adj-lex-fgb-eqvar.txt > /tmp/adjlex.txt
+	src/adj-lex-fgb-eqvar.txt \
+	src/adj-lex-cc.txt > /tmp/adjlex.txt
 	@printf "read lexc /tmp/adjlex.txt \n\
 	save stack int/adjlex.fst \n\
 	clear stack \n\
@@ -1305,6 +1345,8 @@ int/vrul.fst: src/v-reg.txt
 	quit \n" > /tmp/vrul-scr
 	@foma  < /tmp/vrul-scr
 	@rm -f /tmp/vrul-scr
+
+
 
 
 clean:

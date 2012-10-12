@@ -161,7 +161,6 @@ Multichar_Symbols
 	! 
 
 ^CB	! compound boundary
-+Adj+	! adj used in noun compound e.g. domhain+Adj+comhrá+Noun+...
 
 ^GUESSNOUN
 +Guess

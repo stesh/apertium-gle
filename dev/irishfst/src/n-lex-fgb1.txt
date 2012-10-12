@@ -1,9 +1,7 @@
-LEXICON NounsFGB1
 ! *** => changed
-
 ! Masculine Nouns
-
 !
+LEXICON NounsFGB1
 abacas		Nm1-1;	!	(gs & npl -ais, gpl ~)
 abach		Nm1-SINGULAR;	!	(gs -aigh)
 ábharaí		Nm4-4;	!	(gs ~, pl -aithe)

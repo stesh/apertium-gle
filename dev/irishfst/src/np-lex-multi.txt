@@ -24,9 +24,9 @@ Multichar_Symbols
 +Strong	! strong plural 
 +Weak	! weak plural
 +Emph	! emphasised - ár dteachsa, do theachsa, a teachsa
-+Sé	! lenite after simple prep. eg ar chat
++Len	! lenite after simple prep. eg ar chat
 +Prep	! prefix h before vowel
-+Urú	! after compound prep eg ar an gcat
++Ecl	! after compound prep eg ar an gcat
 +CM	! canúint na Mumhan, Munster dialect
 +CC	! canúint Chonnachta
 +CU	! canúint Uladh
@@ -37,6 +37,7 @@ Multichar_Symbols
 +Adj	! +Adj+Base+DeNom are used for adjectives drived from proper nouns
 +Base	! e.g. Spáinneach
 +DeNom
+
 
 ! TAGS TO SIGNIFY WORD-START MUTATIONS
 ^M 	! masculine & feminine : initial mutations of singular nouns depend on 

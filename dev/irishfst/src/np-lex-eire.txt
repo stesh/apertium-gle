@@ -37,7 +37,7 @@ Seanchaisleán	NP-PLACE-fem;	! Oldcastle
 Srath NP-PLACE;	! Strabane
 tAonach	NP-PLACE;	! Nenagh
 tInbhear NP-PLACE;	! Arklow
-tlúr	NP-PLACE;	! Newry
+tIúr	NP-PLACE;	! Newry
 Tulach	NP-PLACE;	! Tullow
 Uaimh	NP-PLACE;	! Navan
 Mhacha	NP-PLACE;	! !!!!Co Armagh
@@ -174,12 +174,12 @@ Laois	NP-PLACE-fem;	! !!!!Co. Laois
 Leifear	NP-PLACE;	! Lifford
 Liatroim	Nf3-Prop;	! !!!!Co. Leitrim
 Longfoirt	NP-PLACE;	! !!!!Co. Longford
-lú	NP-PLACE;	! !!!!Co. Louth
+Lú	NP-PLACE;	! !!!!Co. Louth
 Luimneach	NP-PLACE;	! Limerick
 Luimnigh	NP-PLACE;	! !!!!Co. Limerick
 Mala	NP-PLACE;	! Mallow
 Muineacháin	NP-PLACE-fem;	! !!!!Co. Monaghan
-mí	NP-PLACE-fem;	! !!!!Co. Meath
+Mí	NP-PLACE-fem;	! !!!!Co. Meath
 Muinchille	NP-PLACE;	! Cootehill
 Muineachán	NP-PLACE;	! Monaghan
 Mumhan	NP-PLACE;	! Munster
