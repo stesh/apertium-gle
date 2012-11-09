@@ -2,10 +2,13 @@
 # This is a makefile that builds the Irish morphological engine
 # Elaine Uí Dhonnchadha 
 # February 2003
-# April 2004 : FLASH flags
-# May 2004   : Guessers
-# Mar 2011   : foma version
-# Oct 2012   : foma allguess.fst
+# April 2004    : FLASH flags
+# May 2004      : Guessers
+# Mar 2011      : foma version
+# Oct 2012      : foma allguess.fst
+#
+# Stephen Shaw
+# November 2012 : HFST-compatible allgen.hfst
 ###################################################################
 # Trond Trosterud and Ken Beesley: makefile advice
 ###################################################################
@@ -15,6 +18,10 @@ SRCDIR = /home/elaine/irishfst
 # add the following line at end of next list
 #bin/guess_typo.fst \
 
+all: lexguess.fst
+hfst: lexguess.hfst
+lexguess.fst: bin/lexguess.fst
+lexguess.hfst: bin/lexguess.hfst
 allgen.fst: bin/allgen.fst
 bin/allgen.fst: bin/all.fst int/flash.fst \
 bin/initcaps.fst bin/allcaps.fst bin/urucaps.fst \
@@ -58,6 +65,10 @@ bin/lexguess.fst
 	quit \n" > /tmp/allgen-scr
 	@foma  < /tmp/allgen-scr
 	@rm -f /tmp/allgen-scr
+
+bin/lexguess.hfst: bin/lexguess.fst
+	@zcat bin/lexguess.fst | hfst-fst2fst -Oo bin/lexguess.hfst
+
 
 
 # ALL CAPITALS
@@ -1351,4 +1362,5 @@ int/vrul.fst: src/v-reg.txt
 
 clean:
 	@rm -f bin/*.fst int/*.fst
+	@rm -f bin/*.hfst
 
