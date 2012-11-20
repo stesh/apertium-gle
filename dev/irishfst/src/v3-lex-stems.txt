@@ -430,7 +430,7 @@ LEXICON VI3-PastInd		! Past Tense - Aimsir Chaite
 +1P+Pl+Len:chualamar	#;
 +1P+Pl+Emph+Len:chualamarna	#;
 +3P+Pl+Len:chualadar	#;
-+3P+Pl+Len+Emp:chualadarsan	#;
++3P+Pl+Len+Emph:chualadarsan	#;
 !!! VARIATION WITH ECL 
 +Ecl:gcuala		#;		
 +2P+Sg+Ecl:gcualaís	#;
@@ -438,7 +438,7 @@ LEXICON VI3-PastInd		! Past Tense - Aimsir Chaite
 +1P+Pl+Ecl:gcualamar	#;
 +1P+Pl+Emph+Ecl:gcualamarna	#;
 +3P+Pl+Ecl:gcualadar	#;
-+3P+Pl+Ecl+Emp:gcualadarsan	#;
++3P+Pl+Ecl+Emph:gcualadarsan	#;
 
 +Auto+Len:chualathas	#;		
 +Auto+Ecl:gcualathas	#;		
