@@ -1,0 +1,54 @@
+# Combined Irish Morphology Transducers
+# Elaine Uí Dhonnchadha
+# Thank you to Mans Hulden for providing flookup tool
+# April 2012
+#
+# This scripts loads multiple transducers on to the stack and 
+# saves them in one file 
+# Each transducer is consulted in order until one succeeds in 
+# recognising the input string
+# It allows flookup to function like xerox lookup but without a 
+# lookup script
+#
+# Usage: flookup -a big.fst
+
+read regex @"bin/all.fst" .P.
+@"bin/digit.fst" .P.
+@"bin/tobar.fst"
+@"bin/initcaps-all.fst" .P.
+@"bin/tobar.fst" .P.
+@"bin/prefadjs.fst" .P.
+@"bin/prefnouns.fst" .P.
+@"bin/prefverbs.fst" .P.
+@"bin/suffnouns.fst" .P.
+@"bin/guessv1a.fst" .P.
+@"bin/guessv1b.fst" .P.
+@"bin/guessv1c.fst" .P.
+@"bin/guessv2a.fst" .P.
+@"bin/guessv2b.fst" .P.
+@"bin/guessv2c.fst" .P.
+@"bin/guessv1a.fst" .P.
+@"bin/guessv1b.fst" .P.
+@"bin/guessv1c.fst" .P.
+@"bin/guessv2a.fst" .P.
+@"bin/guessv2b.fst" .P.
+@"bin/guessv2c.fst" .P.
+@"bin/guessv1a.fst" .P.
+@"bin/guessv1b.fst" .P.
+@"bin/guessv1c.fst" .P.
+@"bin/guessv2a.fst" .P.
+@"bin/guessv2b.fst" .P.
+@"bin/guessv2c.fst" .P.
+@"bin/nguess1a.fst" .P.
+@"bin/compnouns.fst" .P.
+@"bin/propguess.fst" .P.
+@"bin/compnouns.fst" .P.
+@"bin/guess_vnva.fst" .P.
+@"bin/nguess1b.fst" .P.
+@"bin/compadjs.fst" .P.
+@"bin/nguess2.fst" .P.
+@"bin/guess_foreign.fst" .P.
+@"bin/guess_unknown.fst";
+
+save stack bin/lexguess.fst
+
