@@ -120,6 +120,7 @@ my %tags = (
     "+Strong" => "<strong>", # Strong plural
 #"+St" => "<st>", # Begin, quote, bracket, etc.
     "+Subord" => "<cnjsub>", # Subordinate
+    "+Subj" => "<subj>", # Subjunctive
     "+Subst" => "<Subst>", # Substantive
     "+Suf" => "<suf>", # Suffix
     "+Sup" => "<sup>", # Superlative
@@ -143,6 +144,13 @@ my %tags = (
     "+Xxx" => "<xxx>", # Unknown
 );
 
+# < and > are reserved characters in XFST; we
+# have to escape them if we want to use them
+# in tags
+foreach $k (keys %tags) {
+    $tags{$k} =~ s/(<|>)/%$1/g;
+}
+
 # It's shortest match first, so some tags 
 # can get mangled
 
@@ -151,22 +159,6 @@ $start_tag = '\+St';
 $end_tag = '\+End';
 
 %fixes = (
-    "<ad>v" => "<adv>",
-    "<cmpd>NoGen" => "<cmpd><nom>",
-    "<fut>Ind" => "<fti>",
-    "<guess>cmpd" => "<guess><cmpd>",
-    "<guess>pref" => "<guess><pref>",
-    "<imp>er" => "<imp>",
-    "<nom>p" => "<comp>",
-    "<past>Imp" => "<past><imp>",
-    "<past>Ind" => "<past><ind>",
-    "<rel>Ind" => "<rel><ind>",
-    "<past>Subj" => "<past><subj>",
-    "<pl>ace" => "<place>",
-    "<pres>Imp" => "<pres><pii>",
-    "<pres>Subj" => "<pres><subj>",
-    "<st>rong" => "<strong>",
-    "<v>al" => "<verbal>",
     "%<ad%>v" => "%<adv%>",
     "%<cmpd%>NoGen" => "%<cmpd%>%<nom%>",
     "%<fut%>Ind" => "%<fti%>",
@@ -174,13 +166,13 @@ $end_tag = '\+End';
     "%<guess%>pref" => "%<guess%>%<pref%>",
     "%<imp%>er" => "%<imp%>",
     "%<nom%>p" => "%<comp%>",
-    "%<pl%>ace" => "%<place%>",
     "%<past%>Imp" => "%<past%>%<imp%>",
     "%<past%>Ind" => "%<past%>%<ind%>",
+    "%<rel%>Ind" => "%<rel%>%<ind%>",
     "%<past%>Subj" => "%<past%>%<subj%>",
+    "%<pl%>ace" => "%<place%>",
     "%<pres%>Imp" => "%<pres%>%<pii%>",
     "%<pres%>Subj" => "%<pres%>%<subj%>",
-    "%<rel%>Ind" => "%<rel%>%<ind%>",
     "%<st%>rong" => "%<strong%>",
     "%<v%>al" => "%<verbal%>",
     "$brack_tag" => "$tags{$brack_tag}",
@@ -198,11 +190,12 @@ while (my $line = <SOURCE>) {
     while (($xfst_tag, $apertium_tag) = each %tags) {
         $xfst_tag =~ s/\+/\\+/g;
         $line =~ s/$xfst_tag/$apertium_tag/g;
+
         $t = $apertium_tag;
         chop $t;
-#        print $t;
-#        print "\n";
+
         $line =~ s/%$t>/%$t%>/g;
+        $line =~ s/%%(<|>)/%$1/;
     }
                 
     while (($problem, $fix) = each %fixes) {
