@@ -1,0 +1,31 @@
+allcaps-all.fst: 10.8 MB. 339070 states, 708904 arcs, 6115373 paths.
+allcaps.fst: 6.7 kB. 4 states, 313 arcs, Cyclic.
+all.fst: 5.6 MB. 178932 states, 369539 arcs, 2148026 paths.
+compadjs.fst: 12.2 MB. 118031 states, 800203 arcs, 21124446480 paths.
+compnouns.fst: 35.9 MB. 548173 states, 2350035 arcs, 181339167545 paths.
+compverbs.fst: 12.0 MB. 165354 states, 785093 arcs, 95601320967 paths.
+digit.fst: 20.4 kB. 45 states, 1135 arcs, Cyclic.
+guess_foreign.fst: 254.5 kB. 308 states, 16123 arcs, Cyclic.
+guess_unknown.fst: 7.8 kB. 5 states, 265 arcs, Cyclic.
+guessv1a.fst: 274.8 kB. 876 states, 17440 arcs, more than 9223372036854775807 paths.
+guessv1b.fst: 302.4 kB. 726 states, 19201 arcs, more than 9223372036854775807 paths.
+guessv1c.fst: 198.7 kB. 475 states, 12568 arcs, more than 9223372036854775807 paths.
+guessv2a.fst: 182.8 kB. 616 states, 11556 arcs, more than 9223372036854775807 paths.
+guessv2b.fst: 151.1 kB. 539 states, 9527 arcs, more than 9223372036854775807 paths.
+guessv2c.fst: 110.2 kB. 242 states, 6917 arcs, more than 9223372036854775807 paths.
+guess_vnva.fst: 186.1 kB. 424 states, 11783 arcs, more than 9223372036854775807 paths.
+initcaps-all.fst: 5.7 MB. 178925 states, 370838 arcs, 4238175 paths.
+initcaps.fst: 4.3 kB. 2 states, 157 arcs, Cyclic.
+lexguess.fst: 5.6 MB. 178932 states, 369539 arcs, 2148026 paths.
+nguess1a.fst: 467.2 kB. 1155 states, 29757 arcs, more than 9223372036854775807 paths.
+nguess1b.fst: 995.1 kB. 2090 states, 63545 arcs, more than 9223372036854775807 paths.
+nguess2.fst: 36.0 kB. 101 states, 2236 arcs, more than 9223372036854775807 paths.
+pcompadjs.fst: 12.2 MB. 118031 states, 800203 arcs, 21124446480 paths.
+pcompnouns.fst: 41.9 MB. 523675 states, 2743927 arcs, 287827314033 paths.
+pcompverbs.fst: 12.0 MB. 165354 states, 785093 arcs, 95601320967 paths.
+prefadjs.fst: 1.0 MB. 31259 states, 65873 arcs, 4642836 paths.
+prefnouns.fst: 1.0 MB. 31462 states, 68416 arcs, 8194340 paths.
+prefverbs.fst: 1011.1 kB. 31602 states, 64486 arcs, 146016573 paths.
+propguess.fst: 208.9 kB. 340 states, 13206 arcs, Cyclic.
+suffnouns.fst: 1.1 MB. 30721 states, 69438 arcs, 78326 paths.
+tobar.fst: 21.1 kB. 1074 states, 1191 arcs, 119 paths.
