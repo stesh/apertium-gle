@@ -1,0 +1,53 @@
+abr.fst: 3.7 kB. 106 states, 146 arcs, 42 paths.
+adjcmpd.fst: 1.7 MB. 47869 states, 112493 arcs, 22443557014 paths.
+adj.fst: 744.5 kB. 23868 states, 47432 arcs, 183294 paths.
+adjlex.fst: 360.5 kB. 10729 states, 22927 arcs, 183298 paths.
+adjpref.fst: 343.3 kB. 10245 states, 21819 arcs, 4642836 paths.
+adv.fst: 8.6 kB. 347 states, 477 arcs, 135 paths.
+art.fst: 725 bytes. 13 states, 17 arcs, 6 paths.
+conj.fst: 3.5 kB. 105 states, 158 arcs, 58 paths.
+det.fst: 3.5 kB. 108 states, 139 arcs, 33 paths.
+fix1.fst: 5.7 MB. 180937 states, 373675 arcs, 2491630 paths.
+fix2.fst: 5.7 MB. 180924 states, 373474 arcs, 2438490 paths.
+fix3.fst: 5.7 MB. 181190 states, 373658 arcs, 2148026 paths.
+flash.fst: 5.7 MB. 181190 states, 373658 arcs, 2148026 paths.
+ftidy.fst: 686 bytes. 1 state, 10 arcs, Cyclic.
+itj.fst: 5.0 kB. 182 states, 243 arcs, 63 paths.
+nbr.fst: 11.4 kB. 21 states, 643 arcs, Cyclic.
+nchg.fst: 95.8 kB. 205 states, 6050 arcs, Cyclic.
+nchk.fst: 3.0 kB. 3 states, 114 arcs, Cyclic.
+ncmpd.fst: 4.3 kB. 9 states, 212 arcs, Cyclic.
+ncommcmpd.fst: 2.7 MB. 74876 states, 178955 arcs, 181404324663 paths.
+ncomm.fst: 1.3 MB. 35254 states, 81969 arcs, 1459491 paths.
+ncommpref.fst: 1.0 MB. 30583 states, 66671 arcs, 8194527 paths.
+ncommsuff.fst: 971.0 kB. 28546 states, 61957 arcs, 78327 paths.
+ndiph.fst: 990 bytes. 6 states, 33 arcs, Cyclic.
+ninit.fst: 323.1 kB. 455 states, 20547 arcs, Cyclic.
+noun-all.fst: 1.5 MB. 43692 states, 100820 arcs, 1501976 paths.
+nouns_adj.fst: 5.0 MB. 159844 states, 325013 arcs, 1684859 paths.
+nouns.fst: 4.4 MB. 142139 states, 284910 arcs, 1501569 paths.
+nprop.fst: 300.8 kB. 8768 states, 19068 arcs, 42334 paths.
+nslen.fst: 39.3 kB. 94 states, 2434 arcs, Cyclic.
+nsync.fst: 19.9 kB. 42 states, 1202 arcs, Cyclic.
+ntidy.fst: 897 bytes. 4 states, 17 arcs, Cyclic.
+num.fst: 3.5 kB. 101 states, 142 arcs, 151 paths.
+nvh.fst: 14.3 kB. 30 states, 827 arcs, Cyclic.
+nx.fst: 4.6 kB. 6 states, 206 arcs, Cyclic.
+padjcmpd.fst: 1.7 MB. 47874 states, 112535 arcs, 44143640132 paths.
+part.fst: 4.2 kB. 104 states, 162 arcs, 62 paths.
+pncommcmpd.fst: 2.6 MB. 72468 states, 171798 arcs, 354313921315 paths.
+prep.fst: 9.7 kB. 350 states, 523 arcs, 213 paths.
+pron.fst: 11.9 kB. 475 states, 660 arcs, 357 paths.
+punct.fst: 2.3 kB. 44 states, 70 arcs, 28 paths.
+pverbcmpd.fst: 1.5 MB. 41648 states, 97983 arcs, 191117605410 paths.
+tags.fst: 3.5 kB. 129 states, 158 arcs, 32 paths.
+temp-all.fst: 5.7 MB. 180937 states, 373675 arcs, 2491630 paths.
+v12.fst: 415.5 kB. 14303 states, 26372 arcs, 780837 paths.
+v12lex.fst: 133.2 kB. 4505 states, 8386 arcs, 780843 paths.
+v3.fst: 98.6 kB. 4651 states, 6067 arcs, 2864 paths.
+verb-all.fst: 506.8 kB. 18709 states, 32180 arcs, 783701 paths.
+verbcmpd.fst: 1.5 MB. 41648 states, 97958 arcs, 95608759449 paths.
+verbpref.fst: 136.0 kB. 4580 states, 8564 arcs, 146017641 paths.
+vn.fst: 303.4 kB. 10687 states, 19231 arcs, 22041 paths.
+vnvalex.fst: 111.1 kB. 3574 states, 7014 arcs, 22050 paths.
+vrul.fst: 418.5 kB. 1046 states, 26708 arcs, Cyclic.
